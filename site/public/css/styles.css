@@ -1,0 +1,113 @@
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #f17334;
+  background: -webkit-gradient(left top,right bottom,color-stop(0,#f17334),color-stop(100%,#563b87));
+  background: linear-gradient(135deg,#f17334 0,#563b87 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17334', endColorstr='#563b87', GradientType=1 );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+
+}
+.center{
+  align-items: center;
+  box-align: center;
+  align-content: center;
+}
+.page-container {
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 50px;
+  padding-left: 350px;
+  display: inline-flex !important;
+}
+
+@media only screen and (max-width : 992px) {
+  .page-container {
+    padding-left: 0;
+    display: flex !important;
+  }
+}
+
+#navbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#consoleHTML {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side-by-side >* {
+  margin: 0 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.margin-sm {
+  margin: 5px;
+}
+
+.margin {
+  margin: 25px;
+}
+
+.button-sm {
+  padding: 0 10px !important;
+}
+
+#github-link {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#facesContainer canvas {
+	display: block;
+	max-width: 300px;
+	margin: 20px auto 40px auto;
+	transition: .3s;
+	
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray; /* IE */
+  margin: 10px;
+}
